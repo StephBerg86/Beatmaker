@@ -18,7 +18,7 @@ svg {
 .hihat-pad {
   width: 5rem;
   height: 5rem;
-  margin: 1rem 0.5rem;
+  margin: 0.5rem 0.5rem;
   cursor: pointer;
 }
 
@@ -59,9 +59,9 @@ svg {
 .kick-track {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 90%;
   justify-content: space-between;
-  margin-top: 5rem;
+  margin-top: 2.2rem;
 }
 
 .kick,
@@ -93,13 +93,13 @@ svg {
 }
 
 .play {
-  padding: 1rem 2rem;
+  padding: 0.2rem 1.2rem;
   font-size: 1.5rem;
   background: rgb(128, 127, 127);
   color: white;
   border: none;
   cursor: pointer;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 select {
@@ -112,6 +112,27 @@ select {
   background: rgb(224, 222, 222);
 }
 
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo-slider {
+  padding: 0.1rem;
+  -webkit-appearance: none;
+  margin: 0rem 0rem;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: grey;
+}
+
+.tempo p {
+  font-size: 1.3rem;
+  margin: 1rem;
+  text-align: center;
+}
 @keyframes playTrack {
   from {
     transform: scale(1);
