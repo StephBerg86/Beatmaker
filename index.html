@@ -79,6 +79,29 @@
           <div class="pad hihat-pad b7"></div>
         </div>
       </div>
+      <div class="clap-track">
+        <div class="controls">
+          <h1>Clap</h1>
+          <button data-track="3" class="mute clap-volume">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select name="clap-select" id="clap-select">
+            <option value="./sounds/clap-analog.wav">Clap Analog</option>
+            <option value="./sounds/clap-808.wav">808 Clap</option>
+            <option value="./sounds/clap-crushed.wav">Clap Crushed</option>
+          </select>
+        </div>
+        <div class="clap">
+          <div class="pad clap-pad b0"></div>
+          <div class="pad clap-pad b1"></div>
+          <div class="pad clap-pad b2"></div>
+          <div class="pad clap-pad b3"></div>
+          <div class="pad clap-pad b4"></div>
+          <div class="pad clap-pad b5"></div>
+          <div class="pad clap-pad b6"></div>
+          <div class="pad clap-pad b7"></div>
+        </div>
+      </div>
       <button class="play">Play</button>
       <div class="tempo">
         <input
@@ -95,6 +118,7 @@
     <audio class="kick-sound" src="./sounds/kick-classic.wav"></audio>
     <audio class="snare-sound" src="./sounds/snare-acoustic01.wav"></audio>
     <audio class="hihat-sound" src="./sounds/hihat-acoustic01.wav"></audio>
+    <audio class="clap-sound" src="./sounds/clap-analog.wav"></audio>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"

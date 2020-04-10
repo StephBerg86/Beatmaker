@@ -15,9 +15,10 @@ svg {
 
 .kick-pad,
 .snare-pad,
-.hihat-pad {
-  width: 5rem;
-  height: 5rem;
+.hihat-pad,
+.clap-pad {
+  width: 4rem;
+  height: 4rem;
   margin: 0.5rem 0.5rem;
   cursor: pointer;
 }
@@ -42,6 +43,10 @@ svg {
   background: rgb(160, 199, 180);
 }
 
+.clap-pad {
+  background: rgb(214, 156, 129);
+}
+
 .kick-pad.active {
   background: rgb(89, 164, 224);
 }
@@ -53,20 +58,25 @@ svg {
 .hihat-pad.active {
   background: rgb(89, 194, 143);
 }
+.clap-pad.active {
+  background: rgb(223, 109, 56);
+}
 
 .hihat-track,
 .snare-track,
-.kick-track {
+.kick-track,
+.clap-track {
   display: flex;
   align-items: center;
   width: 90%;
   justify-content: space-between;
-  margin-top: 2.2rem;
+  margin-top: 2rem;
 }
 
 .kick,
 .snare,
-.hihat {
+.hihat,
+.clap {
   display: flex;
 }
 
@@ -93,13 +103,13 @@ svg {
 }
 
 .play {
-  padding: 0.2rem 1.2rem;
+  padding: 0.1rem 2rem;
   font-size: 1.5rem;
   background: rgb(128, 127, 127);
   color: white;
   border: none;
   cursor: pointer;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 select {
@@ -118,13 +128,13 @@ select {
 }
 
 .tempo-slider {
-  padding: 0.1rem;
+  padding: 0rem;
   -webkit-appearance: none;
   margin: 0rem 0rem;
   width: 100%;
   position: relative;
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 2rem;
   background-color: grey;
 }
 

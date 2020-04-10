@@ -5,9 +5,11 @@ class Drumkit {
     this.currentKick = "./sounds/kick-classic.wav";
     this.currentSnare = "./sounds/snare-acoustic01.wav";
     this.currentHihat = "./sounds/hihat-acoustic01.wav";
+    this.currentClap = "./sounds/clap-analog.wav";
     this.kickAudio = document.querySelector(".kick-sound");
     this.snareAudio = document.querySelector(".snare-sound");
     this.hihatAudio = document.querySelector(".hihat-sound");
+    this.clapAudio = document.querySelector(".clap-sound");
     this.index = 0;
     this.bpm = 150;
     this.isPlaying = null;
@@ -36,6 +38,10 @@ class Drumkit {
         if (bar.classList.contains("hihat-pad")) {
           this.hihatAudio.currentTime = 0;
           this.hihatAudio.play();
+        }
+        if (bar.classList.contains("clap-pad")) {
+          this.clapAudio.currentTime = 0;
+          this.clapAudio.play();
         }
       }
     });
@@ -75,6 +81,9 @@ class Drumkit {
       case "hihat-select":
         this.hihatAudio.src = selectionValue;
         break;
+      case "clap-select":
+        this.clapAudio.src = selectionValue;
+        break;
     }
   }
 
@@ -92,6 +101,9 @@ class Drumkit {
         case "2":
           this.hihatAudio.volume = 0;
           break;
+        case "3":
+          this.clapAudio.volume = 0;
+          break;
       }
     } else {
       switch (muteIndex) {
@@ -103,6 +115,9 @@ class Drumkit {
           break;
         case "2":
           this.hihatAudio.volume = 1;
+          break;
+        case "3":
+          this.clapAudio.volume = 1;
           break;
       }
     }
